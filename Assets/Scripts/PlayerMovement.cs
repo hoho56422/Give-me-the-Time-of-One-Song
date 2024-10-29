@@ -23,7 +23,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
+        // the player should not move forward
+        // transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.LeftArrow)) {
             if (lane > 0) {
